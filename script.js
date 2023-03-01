@@ -13,7 +13,7 @@ function requestApiGihub(){
                 let projects = document.createElement('div')
                 projects.setAttribute('class','project-item theme')
                 
-                if(!(item.language == null && item.description == null)){
+                if(item.stargazers_count){
                     projects.innerHTML =` 
                     <a href="${item.html_url}">
                     <span>
